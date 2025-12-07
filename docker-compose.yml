@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  # Classifier training service
+  train-classifier:
+    build: .
+    image: ml-training:latest
+    container_name: classifier-training
+    command: python -m src.train_classifier
+    volumes:
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # For CPU-only, comment out the deploy section above
+
+  # Segmentation training service
+  train-segmentation:
+    build: .
+    image: ml-training:latest
+    container_name: segmentation-training
+    command: python -m src.train_segmentation
+    volumes:
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # For CPU-only, comment out the deploy section above
+
+  # Development/interactive service
+  dev:
+    build: .
+    image: ml-training:latest
+    container_name: ml-dev
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # API service for video analysis
+  api:
+    build: .
+    image: ml-training:latest
+    container_name: video-segmentation-api
+    command: python -m src.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./videos:/app/videos
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+      - ./src:/app/src
+    environment:
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    # For CPU-only, comment out the deploy section above
+
+  # Frontend service
+  frontend:
+    build: ./frontend
+    container_name: video-segmentation-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - api
+

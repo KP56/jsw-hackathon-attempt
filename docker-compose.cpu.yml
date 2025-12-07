@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  # Classifier training service (CPU only)
+  train-classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: ml-training:cpu
+    container_name: classifier-training-cpu
+    command: python -m src.train_classifier
+    volumes:
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # Segmentation training service (CPU only)
+  train-segmentation:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: ml-training:cpu
+    container_name: segmentation-training-cpu
+    command: python -m src.train_segmentation
+    volumes:
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # Development/interactive service (CPU only)
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: ml-training:cpu
+    container_name: ml-dev-cpu
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # API service for video analysis (CPU only)
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    image: ml-training:cpu
+    container_name: video-segmentation-api-cpu
+    command: python -m src.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./videos:/app/videos
+      - ./checkpoints:/app/checkpoints
+      - ./config.yml:/app/config.yml
+      - ./src:/app/src
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # Frontend service
+  frontend:
+    build: ./frontend
+    container_name: video-segmentation-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - api
+

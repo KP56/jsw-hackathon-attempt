@@ -1,0 +1,47 @@
+# Training Configuration
+
+# Data settings
+data:
+  tensors_dir: "./data/tensors"  # Directory containing .pt tensor files
+  target_size: [540, 960]  # [height, width] for resizing
+  train_split: 0.8
+  batch_size_classifier: 4
+  batch_size_segmentation: 8
+  num_workers: 0
+  random_seed: 42
+
+# Model architecture
+model:
+  in_channels: 3  # RGB images
+  hidden_size: 8  # Base hidden size (will be multiplied for deeper layers)
+
+# Classifier training
+classifier:
+  num_epochs: 10
+  learning_rate: 0.001
+  adam_betas: [0.9, 0.999]
+  checkpoint_dir: "./checkpoints/classifier"
+
+# Segmentation training
+segmentation:
+  num_epochs: 5
+  learning_rate: 0.001
+  adam_betas: [0.9, 0.999]
+  checkpoint_dir: "./checkpoints/segmentation"
+
+# Device settings (auto-detected, but can be overridden)
+device:
+  use_cuda: true  # Set to false to force CPU
+  cuda_device: 0  # GPU device index
+
+# API settings
+api:
+  host: "0.0.0.0"
+  port: 8000
+  videos_dir: "./videos"  # Directory containing video files
+  images_dir: "./images"  # Directory containing image files for mask computation
+  masks_output_dir: "./output/masks"  # Directory to save computed masks
+  intersection_confidence_threshold: 0.9  # High confidence threshold for intersection detection
+  intersection_no_confidence_threshold: 0.2  # Low confidence threshold for segment start
+  segmentation_rows: 8  # Number of rows from bottom to analyze for segmentation
+

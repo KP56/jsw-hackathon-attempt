@@ -1,0 +1,24 @@
+# Docker Compose Override for Development
+# This file is automatically merged with docker-compose.yml
+# Use this for local development customizations
+
+version: '3.8'
+
+services:
+  api:
+    volumes:
+      # Mount source code for hot-reload
+      - ./src:/app/src
+    environment:
+      # Enable debug mode
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    volumes:
+      # Mount source for hot-reload
+      - ./frontend/src:/app/src
+      - ./frontend/index.html:/app/index.html
+      - ./frontend/vite.config.ts:/app/vite.config.ts
+      # Prevent node_modules from being overwritten
+      - /app/node_modules
+

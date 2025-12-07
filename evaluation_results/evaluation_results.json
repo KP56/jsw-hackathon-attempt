@@ -1,0 +1,639 @@
+{
+  "summary": {
+    "num_images": 62,
+    "mean_iou": 0.35023217678265334,
+    "std_iou": 0.012066076837842799,
+    "mean_dice": 0.5186580780392142,
+    "std_dice": 0.012891372703104748,
+    "mean_precision": 0.35023695905772506,
+    "mean_recall": 0.999962427565724,
+    "min_iou": 0.33497036874451275,
+    "max_iou": 0.4109176770201862,
+    "median_iou": 0.3467097762593149,
+    "min_dice": 0.5018394064574471,
+    "max_dice": 0.5824828531286552,
+    "median_dice": 0.5148990258487451
+  },
+  "per_image_results": [
+    {
+      "image_id": 0,
+      "file_name": "random_0001.jpg",
+      "iou": 0.38227043691039636,
+      "dice": 0.5531051329793816,
+      "precision": 0.38227043691039636,
+      "recall": 1.0,
+      "gt_pixels": 189967,
+      "pred_pixels": 496944
+    },
+    {
+      "image_id": 1,
+      "file_name": "random_0002.jpg",
+      "iou": 0.3677369970404886,
+      "dice": 0.5377305693071087,
+      "precision": 0.3677369970404886,
+      "recall": 1.0,
+      "gt_pixels": 186881,
+      "pred_pixels": 508192
+    },
+    {
+      "image_id": 2,
+      "file_name": "random_0003.jpg",
+      "iou": 0.4109176770201862,
+      "dice": 0.5824828531286552,
+      "precision": 0.4109176770201862,
+      "recall": 1.0,
+      "gt_pixels": 210403,
+      "pred_pixels": 512032
+    },
+    {
+      "image_id": 3,
+      "file_name": "random_0004.jpg",
+      "iou": 0.35314134895523325,
+      "dice": 0.5219578120613864,
+      "precision": 0.35314134895523325,
+      "recall": 1.0,
+      "gt_pixels": 180362,
+      "pred_pixels": 510736
+    },
+    {
+      "image_id": 4,
+      "file_name": "random_0005.jpg",
+      "iou": 0.39188354343270043,
+      "dice": 0.5630981776912554,
+      "precision": 0.39188354343270043,
+      "recall": 1.0,
+      "gt_pixels": 200450,
+      "pred_pixels": 511504
+    },
+    {
+      "image_id": 5,
+      "file_name": "random_0006.jpg",
+      "iou": 0.34493598859252717,
+      "dice": 0.5129403800897647,
+      "precision": 0.3450762883387825,
+      "recall": 0.9988226877644023,
+      "gt_pixels": 177523,
+      "pred_pixels": 513840
+    },
+    {
+      "image_id": 6,
+      "file_name": "random_0007.jpg",
+      "iou": 0.36790856962387614,
+      "dice": 0.5379139772843696,
+      "precision": 0.3680647709320695,
+      "recall": 0.9988478213104827,
+      "gt_pixels": 186603,
+      "pred_pixels": 506400
+    },
+    {
+      "image_id": 7,
+      "file_name": "random_0008.jpg",
+      "iou": 0.36676907484242866,
+      "dice": 0.5366950154102843,
+      "precision": 0.36676907484242866,
+      "recall": 1.0,
+      "gt_pixels": 185280,
+      "pred_pixels": 505168
+    },
+    {
+      "image_id": 8,
+      "file_name": "random_0009.jpg",
+      "iou": 0.34939322657028915,
+      "dice": 0.5178523497680969,
+      "precision": 0.34939322657028915,
+      "recall": 1.0,
+      "gt_pixels": 179426,
+      "pred_pixels": 513536
+    },
+    {
+      "image_id": 9,
+      "file_name": "random_0010.jpg",
+      "iou": 0.35004960782475547,
+      "dice": 0.5185729558319964,
+      "precision": 0.35004960782475547,
+      "recall": 1.0,
+      "gt_pixels": 179231,
+      "pred_pixels": 512016
+    },
+    {
+      "image_id": 10,
+      "file_name": "random_0011.jpg",
+      "iou": 0.3564488753529393,
+      "dice": 0.5255618281377448,
+      "precision": 0.3564488753529393,
+      "recall": 1.0,
+      "gt_pixels": 179770,
+      "pred_pixels": 504336
+    },
+    {
+      "image_id": 11,
+      "file_name": "random_0012.jpg",
+      "iou": 0.34817161731634183,
+      "dice": 0.5165093417548859,
+      "precision": 0.34817161731634183,
+      "recall": 1.0,
+      "gt_pixels": 178353,
+      "pred_pixels": 512256
+    },
+    {
+      "image_id": 12,
+      "file_name": "random_0013.jpg",
+      "iou": 0.347352609838528,
+      "dice": 0.5156075808249722,
+      "precision": 0.347352609838528,
+      "recall": 1.0,
+      "gt_pixels": 177600,
+      "pred_pixels": 511296
+    },
+    {
+      "image_id": 13,
+      "file_name": "random_0014.jpg",
+      "iou": 0.34614172554390116,
+      "dice": 0.5142723369696374,
+      "precision": 0.34614172554390116,
+      "recall": 1.0,
+      "gt_pixels": 177939,
+      "pred_pixels": 514064
+    },
+    {
+      "image_id": 14,
+      "file_name": "random_0015.jpg",
+      "iou": 0.34606347994139836,
+      "dice": 0.5141859727989417,
+      "precision": 0.34606347994139836,
+      "recall": 1.0,
+      "gt_pixels": 177633,
+      "pred_pixels": 513296
+    },
+    {
+      "image_id": 15,
+      "file_name": "random_0016.jpg",
+      "iou": 0.343327676402815,
+      "dice": 0.5111599834259106,
+      "precision": 0.343327676402815,
+      "recall": 1.0,
+      "gt_pixels": 176410,
+      "pred_pixels": 513824
+    },
+    {
+      "image_id": 16,
+      "file_name": "random_0017.jpg",
+      "iou": 0.34774993737867116,
+      "dice": 0.5160451916696553,
+      "precision": 0.34774993737867116,
+      "recall": 1.0,
+      "gt_pixels": 177703,
+      "pred_pixels": 511008
+    },
+    {
+      "image_id": 17,
+      "file_name": "random_0018.jpg",
+      "iou": 0.3441239282685845,
+      "dice": 0.5120419643326538,
+      "precision": 0.3441239282685845,
+      "recall": 1.0,
+      "gt_pixels": 175316,
+      "pred_pixels": 509456
+    },
+    {
+      "image_id": 18,
+      "file_name": "random_0019.jpg",
+      "iou": 0.3546422386649874,
+      "dice": 0.5235954240058108,
+      "precision": 0.3546422386649874,
+      "recall": 1.0,
+      "gt_pixels": 180215,
+      "pred_pixels": 508160
+    },
+    {
+      "image_id": 19,
+      "file_name": "random_0020.jpg",
+      "iou": 0.3514367050936658,
+      "dice": 0.5200934735146302,
+      "precision": 0.3514367050936658,
+      "recall": 1.0,
+      "gt_pixels": 179497,
+      "pred_pixels": 510752
+    },
+    {
+      "image_id": 20,
+      "file_name": "random_0021.jpg",
+      "iou": 0.3523704862858581,
+      "dice": 0.5211153154541345,
+      "precision": 0.3523704862858581,
+      "recall": 1.0,
+      "gt_pixels": 179241,
+      "pred_pixels": 508672
+    },
+    {
+      "image_id": 21,
+      "file_name": "random_0022.jpg",
+      "iou": 0.3443515625,
+      "dice": 0.512293914933431,
+      "precision": 0.3443515625,
+      "recall": 1.0,
+      "gt_pixels": 176308,
+      "pred_pixels": 512000
+    },
+    {
+      "image_id": 22,
+      "file_name": "random_0023.jpg",
+      "iou": 0.3587070777855641,
+      "dice": 0.5280123783121655,
+      "precision": 0.3587070777855641,
+      "recall": 1.0,
+      "gt_pixels": 180180,
+      "pred_pixels": 502304
+    },
+    {
+      "image_id": 23,
+      "file_name": "random_0024.jpg",
+      "iou": 0.3541355741140607,
+      "dice": 0.5230430111781871,
+      "precision": 0.3541355741140607,
+      "recall": 1.0,
+      "gt_pixels": 178439,
+      "pred_pixels": 503872
+    },
+    {
+      "image_id": 24,
+      "file_name": "random_0025.jpg",
+      "iou": 0.34659834788029925,
+      "dice": 0.5147761371100521,
+      "precision": 0.34659834788029925,
+      "recall": 1.0,
+      "gt_pixels": 177902,
+      "pred_pixels": 513280
+    },
+    {
+      "image_id": 25,
+      "file_name": "random_0026.jpg",
+      "iou": 0.33753734863972323,
+      "dice": 0.5047146518682248,
+      "precision": 0.33753734863972323,
+      "recall": 1.0,
+      "gt_pixels": 171712,
+      "pred_pixels": 508720
+    },
+    {
+      "image_id": 26,
+      "file_name": "random_0027.jpg",
+      "iou": 0.35447619649743944,
+      "dice": 0.5234144349145224,
+      "precision": 0.35447619649743944,
+      "recall": 1.0,
+      "gt_pixels": 179416,
+      "pred_pixels": 506144
+    },
+    {
+      "image_id": 27,
+      "file_name": "random_0028.jpg",
+      "iou": 0.3480471928397071,
+      "dice": 0.516372415874453,
+      "precision": 0.3480471928397071,
+      "recall": 1.0,
+      "gt_pixels": 177944,
+      "pred_pixels": 511264
+    },
+    {
+      "image_id": 28,
+      "file_name": "random_0029.jpg",
+      "iou": 0.34826811958296694,
+      "dice": 0.5166155225723054,
+      "precision": 0.34826811958296694,
+      "recall": 1.0,
+      "gt_pixels": 177444,
+      "pred_pixels": 509504
+    },
+    {
+      "image_id": 29,
+      "file_name": "random_0030.jpg",
+      "iou": 0.35081280826621714,
+      "dice": 0.5194099524663068,
+      "precision": 0.35081280826621714,
+      "recall": 1.0,
+      "gt_pixels": 179807,
+      "pred_pixels": 512544
+    },
+    {
+      "image_id": 30,
+      "file_name": "random_0031.jpg",
+      "iou": 0.35215944223610324,
+      "dice": 0.5208844922219047,
+      "precision": 0.35215944223610324,
+      "recall": 1.0,
+      "gt_pixels": 178604,
+      "pred_pixels": 507168
+    },
+    {
+      "image_id": 31,
+      "file_name": "random_0032.jpg",
+      "iou": 0.34962568271705696,
+      "dice": 0.5181076311665809,
+      "precision": 0.34962568271705696,
+      "recall": 1.0,
+      "gt_pixels": 178214,
+      "pred_pixels": 509728
+    },
+    {
+      "image_id": 32,
+      "file_name": "random_0033.jpg",
+      "iou": 0.34518606393606394,
+      "dice": 0.5132168302815103,
+      "precision": 0.34518606393606394,
+      "recall": 1.0,
+      "gt_pixels": 176912,
+      "pred_pixels": 512512
+    },
+    {
+      "image_id": 33,
+      "file_name": "random_0034.jpg",
+      "iou": 0.34824646629266304,
+      "dice": 0.516591698920232,
+      "precision": 0.34824646629266304,
+      "recall": 1.0,
+      "gt_pixels": 177784,
+      "pred_pixels": 510512
+    },
+    {
+      "image_id": 34,
+      "file_name": "random_0035.jpg",
+      "iou": 0.33497036874451275,
+      "dice": 0.5018394064574471,
+      "precision": 0.33497036874451275,
+      "recall": 1.0,
+      "gt_pixels": 170926,
+      "pred_pixels": 510272
+    },
+    {
+      "image_id": 35,
+      "file_name": "random_0036.jpg",
+      "iou": 0.3448866467364225,
+      "dice": 0.512885822122398,
+      "precision": 0.3448866467364225,
+      "recall": 1.0,
+      "gt_pixels": 177200,
+      "pred_pixels": 513792
+    },
+    {
+      "image_id": 36,
+      "file_name": "random_0037.jpg",
+      "iou": 0.34284492144968115,
+      "dice": 0.5106247429964729,
+      "precision": 0.34284492144968115,
+      "recall": 1.0,
+      "gt_pixels": 176332,
+      "pred_pixels": 514320
+    },
+    {
+      "image_id": 37,
+      "file_name": "random_0038.jpg",
+      "iou": 0.346686031984008,
+      "dice": 0.5148728415535017,
+      "precision": 0.346686031984008,
+      "recall": 1.0,
+      "gt_pixels": 177592,
+      "pred_pixels": 512256
+    },
+    {
+      "image_id": 38,
+      "file_name": "random_0039.jpg",
+      "iou": 0.35049004258517036,
+      "dice": 0.5190560930227166,
+      "precision": 0.35049004258517036,
+      "recall": 1.0,
+      "gt_pixels": 179092,
+      "pred_pixels": 510976
+    },
+    {
+      "image_id": 39,
+      "file_name": "random_0040.jpg",
+      "iou": 0.3454206648389308,
+      "dice": 0.5134760805540078,
+      "precision": 0.3454206648389308,
+      "recall": 1.0,
+      "gt_pixels": 177397,
+      "pred_pixels": 513568
+    },
+    {
+      "image_id": 40,
+      "file_name": "random_0041.jpg",
+      "iou": 0.3477121254990726,
+      "dice": 0.5160035573180155,
+      "precision": 0.3477121254990726,
+      "recall": 1.0,
+      "gt_pixels": 176966,
+      "pred_pixels": 508944
+    },
+    {
+      "image_id": 41,
+      "file_name": "random_0042.jpg",
+      "iou": 0.3470232291142426,
+      "dice": 0.5152446099128275,
+      "precision": 0.3470232291142426,
+      "recall": 1.0,
+      "gt_pixels": 176521,
+      "pred_pixels": 508672
+    },
+    {
+      "image_id": 42,
+      "file_name": "random_0043.jpg",
+      "iou": 0.34151416580860555,
+      "dice": 0.5091473120639854,
+      "precision": 0.34151416580860555,
+      "recall": 1.0,
+      "gt_pixels": 175123,
+      "pred_pixels": 512784
+    },
+    {
+      "image_id": 43,
+      "file_name": "random_0044.jpg",
+      "iou": 0.3505859992413226,
+      "dice": 0.5191613113689326,
+      "precision": 0.3505859992413226,
+      "recall": 1.0,
+      "gt_pixels": 177447,
+      "pred_pixels": 506144
+    },
+    {
+      "image_id": 44,
+      "file_name": "random_0045.jpg",
+      "iou": 0.343720703125,
+      "dice": 0.5115954562962856,
+      "precision": 0.343720703125,
+      "recall": 1.0,
+      "gt_pixels": 175985,
+      "pred_pixels": 512000
+    },
+    {
+      "image_id": 45,
+      "file_name": "random_0046.jpg",
+      "iou": 0.34544862393909137,
+      "dice": 0.5135069712698742,
+      "precision": 0.34544862393909137,
+      "recall": 1.0,
+      "gt_pixels": 177135,
+      "pred_pixels": 512768
+    },
+    {
+      "image_id": 46,
+      "file_name": "random_0047.jpg",
+      "iou": 0.3457080496722138,
+      "dice": 0.5137935375454149,
+      "precision": 0.3457080496722138,
+      "recall": 1.0,
+      "gt_pixels": 175498,
+      "pred_pixels": 507648
+    },
+    {
+      "image_id": 47,
+      "file_name": "random_0048.jpg",
+      "iou": 0.3458605537408617,
+      "dice": 0.5139619446896359,
+      "precision": 0.3458605537408617,
+      "recall": 1.0,
+      "gt_pixels": 177883,
+      "pred_pixels": 514320
+    },
+    {
+      "image_id": 48,
+      "file_name": "random_0049.jpg",
+      "iou": 0.3448515625,
+      "dice": 0.5128470265654318,
+      "precision": 0.3448515625,
+      "recall": 1.0,
+      "gt_pixels": 176564,
+      "pred_pixels": 512000
+    },
+    {
+      "image_id": 49,
+      "file_name": "random_0050.jpg",
+      "iou": 0.34125710582208896,
+      "dice": 0.50886158118495,
+      "precision": 0.34125710582208896,
+      "recall": 1.0,
+      "gt_pixels": 174811,
+      "pred_pixels": 512256
+    },
+    {
+      "image_id": 50,
+      "file_name": "random_0051.jpg",
+      "iou": 0.3448321499750872,
+      "dice": 0.5128255596528908,
+      "precision": 0.3448321499750872,
+      "recall": 1.0,
+      "gt_pixels": 177172,
+      "pred_pixels": 513792
+    },
+    {
+      "image_id": 51,
+      "file_name": "random_0052.jpg",
+      "iou": 0.3461421391108891,
+      "dice": 0.5142727934206293,
+      "precision": 0.3461421391108891,
+      "recall": 1.0,
+      "gt_pixels": 177402,
+      "pred_pixels": 512512
+    },
+    {
+      "image_id": 52,
+      "file_name": "random_0053.jpg",
+      "iou": 0.3418854322371699,
+      "dice": 0.5095597940387265,
+      "precision": 0.3418854322371699,
+      "recall": 1.0,
+      "gt_pixels": 175658,
+      "pred_pixels": 513792
+    },
+    {
+      "image_id": 53,
+      "file_name": "random_0054.jpg",
+      "iou": 0.3461745520276643,
+      "dice": 0.514308566457807,
+      "precision": 0.3461745520276643,
+      "recall": 1.0,
+      "gt_pixels": 176189,
+      "pred_pixels": 508960
+    },
+    {
+      "image_id": 54,
+      "file_name": "random_0055.jpg",
+      "iou": 0.3449084186220669,
+      "dice": 0.5129098960886046,
+      "precision": 0.3449084186220669,
+      "recall": 1.0,
+      "gt_pixels": 176858,
+      "pred_pixels": 512768
+    },
+    {
+      "image_id": 55,
+      "file_name": "random_0056.jpg",
+      "iou": 0.3430811173952442,
+      "dice": 0.5108866664146269,
+      "precision": 0.3430811173952442,
+      "recall": 1.0,
+      "gt_pixels": 175674,
+      "pred_pixels": 512048
+    },
+    {
+      "image_id": 56,
+      "file_name": "random_0057.jpg",
+      "iou": 0.34673352053462175,
+      "dice": 0.5149252101439885,
+      "precision": 0.34673352053462175,
+      "recall": 1.0,
+      "gt_pixels": 176823,
+      "pred_pixels": 509968
+    },
+    {
+      "image_id": 57,
+      "file_name": "random_0058.jpg",
+      "iou": 0.34694069069069067,
+      "dice": 0.5151536264195639,
+      "precision": 0.34694069069069067,
+      "recall": 1.0,
+      "gt_pixels": 177456,
+      "pred_pixels": 511488
+    },
+    {
+      "image_id": 58,
+      "file_name": "random_0059.jpg",
+      "iou": 0.3441414039132602,
+      "dice": 0.512061309786821,
+      "precision": 0.3441414039132602,
+      "recall": 1.0,
+      "gt_pixels": 176729,
+      "pred_pixels": 513536
+    },
+    {
+      "image_id": 59,
+      "file_name": "random_0060.jpg",
+      "iou": 0.3413290606287425,
+      "dice": 0.5089415724263007,
+      "precision": 0.3413290606287425,
+      "recall": 1.0,
+      "gt_pixels": 175110,
+      "pred_pixels": 513024
+    },
+    {
+      "image_id": 60,
+      "file_name": "random_0061.jpg",
+      "iou": 0.3418750195208795,
+      "dice": 0.5095482284824813,
+      "precision": 0.3418750195208795,
+      "recall": 1.0,
+      "gt_pixels": 175133,
+      "pred_pixels": 512272
+    },
+    {
+      "image_id": 61,
+      "file_name": "random_0062.jpg",
+      "iou": 0.3463830268785315,
+      "dice": 0.5145386119157928,
+      "precision": 0.3463830268785315,
+      "recall": 1.0,
+      "gt_pixels": 177531,
+      "pred_pixels": 512528
+    }
+  ]
+}
