@@ -39,10 +39,8 @@ wheels/
 Thumbs.db
 
 # Project specific
-checkpoints/
 data/tensors/
 videos/
-api_test_results.json
 
 # Docker
 .dockerignore
